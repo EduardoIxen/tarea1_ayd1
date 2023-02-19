@@ -14,7 +14,7 @@ def calculate():
     if request.is_json:
         num1 = data['num1']
         num2 = data['num2']
-        result = int(num1) + int(num2)
+        result = int(num1) * int(num2)
         return {'result': result}, 200
 
     return {'error': 'Invalid input'}, 400
