@@ -19,5 +19,11 @@ def calculate():
 
     return {'error': 'Invalid input'}, 400
 
+
+@app.get('/info')
+def info():
+    return {'info': 'Eduardo Tomas Ixen Rucuch - 201800524'}, 200
+
+
 if __name__ == '__main__':
     app.run()
